@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
-
+import "../src/assets/fonts/SFSports.ttf";
 ReactDOM.render(
   <React.StrictMode>
     <App />
