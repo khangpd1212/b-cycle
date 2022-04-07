@@ -1,5 +1,5 @@
 import React from "react";
-import img_cycle_footer from "../../../assets/images/cycle4.png";
+import img_cycle_footer from "../assets/images/cycle4.png";
 export default function Footer() {
   return (
     <div className="bg-[#080606] py-[80px]">

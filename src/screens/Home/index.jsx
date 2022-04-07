@@ -5,7 +5,6 @@ import img_token_distribution from "../../assets/images/token distribution.png";
 import img_tokenomic from "../../assets/images/tokenomic.png";
 import Banner from "./components/Banner";
 import EarningEconomy from "./components/EarningEconomy";
-import Footer from "./components/Footer";
 import IntroduceCycle from "./components/IntroduceCycle";
 import MeetCompanios from "./components/MeetCompanios";
 import PCLToken from "./components/PCLToken";
@@ -33,7 +32,6 @@ export default function Home() {
       <SectionAppCycle />
       <TeamSection />
       <MeetCompanios />
-      <Footer />
     </>
   );
 }
