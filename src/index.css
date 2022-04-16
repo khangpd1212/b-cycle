@@ -3,17 +3,32 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: "SFSports";
-	src: local("SFSports"), url("./assets/fonts/SFSports.ttf");
-	font-weight: bold
+  font-family: "SFSports";
+  src: local("SFSports"), url("./assets/fonts/SFSports.ttf");
+  font-weight: bold;
 }
 p {
   font-family: "Varela", sans-serif;
   font-size: 16px;
-  padding: 20px 0 0 0;
 }
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   font-family: "SFSports", sans-serif;
   font-size: 48px;
   line-height: 41px;
+}
+img {
+  width: 100%;
+}
+@media screen and (min-width: 1536px) {
+  p {
+    font-size: 2rem !important;
+    line-height: 1.5 !important;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: 5rem !important;
+  }
 }
