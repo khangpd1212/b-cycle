@@ -1,6 +1,6 @@
 import React from "react";
 import img_fixnex_footer from "../assets/images/logo_footer.png";
-import { email, medium, telegram, twitter } from "../assets/svg/icons.js";
+import { email, medium, telegram, twitter } from "../assets/svg/socialMedia.js";
 export default function Footer() {
   const listIcon = [medium, telegram, twitter, email];
   return (

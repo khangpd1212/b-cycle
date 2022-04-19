@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import { useViewport } from "../../hooks/useViewport";
@@ -10,25 +10,6 @@ export default function Header() {
   const breakpoint = "1024";
 
   const [checked, setChecked] = useState(false);
-  const isStickyHeader = useRef(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", isSticky);
-    return () => {
-      window.removeEventListener("scroll", isSticky);
-    };
-  });
-
-  const isSticky = () => {
-    const scrollTop = window.scrollY;
-    scrollTop >= 250
-      ? (isStickyHeader.current = true)
-      : (isStickyHeader.current = false);
-  };
-  console.log(
-    "🚀 ~ file: index.jsx ~ line 18 ~ window.addEventListener ~ isFixedHeader.current",
-    isSticky.current
-  );
   return (
     <div className="bg-white px-20 lg:px-12 sm1:px-4 sm3:px-4 py-3 sm1:py-3 w-full sticky -top-1 z-[999]">
       <div

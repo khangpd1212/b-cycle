@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
+import Collapse from "../../../components/Collapse";
 export default function HowToBuy() {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+
   const listContent = [
     {
       title: "1. Download Metamask",
@@ -26,6 +29,11 @@ export default function HowToBuy() {
       title: "7. View your ZOOT in Metamask",
     },
   ];
+
+  const onCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+  };
+
   return (
     <div className="md1:px-6">
       <div className="text-center mb-12" id="how_to_buy">
@@ -38,16 +46,14 @@ export default function HowToBuy() {
         </p>
         <div className="flex flex-col divide-y divide-[#C4C4C4]">
           {listContent.map((item, key) => (
-            <div className="py-5" key={key}>
-              <p
-                className={`capitalize text-xl ${item.content && "mb-[10px]"}`}
-              >
-                {item.title}
-              </p>
-              {item.content && (
-                <span className="text-[#685C5C]">{item.content}</span>
-              )}
-            </div>
+            <Collapse
+              title={item.title}
+              key={key}
+              className="flex items-center justify-between gap-20 cursor-pointer"
+              onClick={onCollapse}
+            >
+              {item.content && <span>{item.content}</span>}
+            </Collapse>
           ))}
         </div>
       </div>
