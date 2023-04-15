@@ -20,7 +20,7 @@ function Collapse(props) {
 
   useEffect(() => {
     setMaxHeight(ref.current.scrollHeight);
-  });
+  },[ref.current.scrollHeight]);
 
   return (
     <div

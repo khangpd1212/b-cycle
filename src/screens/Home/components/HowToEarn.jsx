@@ -1,8 +1,7 @@
 import React from "react";
-import bg_how_to_earn from "../../../assets/images/bg_how_to_earn.png";
 import img_running_man from "../../../assets/images/running_man.png";
 
-export default function () {
+export default function HowToEarn() {
   return (
     <div className="flex md1:flex-wrap md1:justify-center items-center gap-24 sm1:gap-20 lg:gap-14 pl-28 pr-20 xl:px-20 lg:px-12 sm1:px-6 relative z-0 -top-52 xl:-top-0 md1:py-32 xl:my-20">
       <div className="basis-1/2 md1:basis-full" id="how_to_earn">

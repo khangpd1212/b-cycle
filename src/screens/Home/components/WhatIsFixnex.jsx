@@ -32,7 +32,7 @@ export default function WhatIsFixnex() {
         </p>
       </div>
       <div className="basis-1/2 md1:basis-full">
-        <img className="" src={img_running_shoes} />
+        <img src={img_running_shoes} alt="running-shoes"/>
       </div>
     </div>
   );
